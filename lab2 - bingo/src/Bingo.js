@@ -5,7 +5,6 @@ export default class Bingo {
   constructor() {
     // the constructor is called when you create a new instance of the class
     console.log("Welcome to Bingo! 🎉");
-
     // an array including 25 cards (5x5)
     this.cards = [
       "Already made a website",
