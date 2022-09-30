@@ -64,8 +64,8 @@ export default class Bingo {
     if (localStorage.getItem("bingo")) {
       let item = window.localStorage.getItem("bingo");
       let cardsWon = JSON.parse(item);
-      cardsWon.forEach((card) => {
-        document.querySelector(`[data-number="${card}"]`).classList.add("bingo__card--done");
+      cardsWon.forEach((cards) => {
+        document.querySelector(`[data-number="${cards}"]`).classList.add("bingo__card--done");
       });
       this.checkWinner();
     }
