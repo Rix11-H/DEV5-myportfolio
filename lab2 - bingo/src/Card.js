@@ -6,7 +6,7 @@ export default class Card {
   }
 
   markDone(target) {
-    if(target.classList.contains("bingo__card--done")){
+    if (target.classList.contains("bingo__card--done")) {
       target.classList.remove("bingo__card--done");
     } else {
       target.classList.add("bingo__card--done");
