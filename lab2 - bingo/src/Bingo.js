@@ -46,32 +46,28 @@ export default class Bingo {
   static checkWinner() {
     let cardsDone = document.querySelectorAll(".bingo__card--done");
     if (cardsDone.length === 5) {
-    document.querySelector(".bingo__overlay").style.display = "block";
+      document.querySelector(".bingo__overlay").style.display = "block";
     }
   }
 
   static save() {
     let cardsWon = [];
     let cards = document.querySelectorAll(".bingo__card--done");
-    cards.forEach((cards) => { cardsWon.push(cards.dataset.number)});
+    cards.forEach((cards) => { cardsWon.push(cards.dataset.number) });
     window.localStorage.setItem("bingo", JSON.stringify(cardsWon));
-    if (cards.length === 0 || cards.length === 5) {
+    if (cards.length === 0 || cards.length === 5) { //wanneer gewonnen en refreshed kan je zo meteen opnieuw spelen.
       localStorage.removeItem("bingo");
     }
-
   }
 
   static load() {
-   
     if (localStorage.getItem("bingo")) {
       let item = window.localStorage.getItem("bingo");
       let cardsWon = JSON.parse(item);
-
-      cardsWon.forEach((card) => { 
+      cardsWon.forEach((card) => {
         document.querySelector(`[data-number="${card}"]`).classList.add("bingo__card--done");
       });
       this.checkWinner();
     }
-
   }
 }
