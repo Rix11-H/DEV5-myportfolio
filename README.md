@@ -118,3 +118,11 @@ This application was created by retrieven geolocation data, checking the weather
 [Visit the live project on Vercel](https://weather-application-rix11-h.vercel.app/)
 
 <div style="text-align:center"><img src="https://github.com/Rix11-H/DEV5-LAB3/blob/main/weatherHeroes/public/Schermafbeelding%202022-10-10%20140708.png" /></div>
+
+
+
+## Lab 4 - THREE.js
+
+[Go to repo](https://github.com/Rix11-H/DEV5-LAB4)
+[Link to live](https://rickys-space-station.vercel.app/)
+
