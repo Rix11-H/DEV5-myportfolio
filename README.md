@@ -128,3 +128,7 @@ This application was created by retrieven geolocation data, checking the weather
 
 [Link to live](https://rickys-space-station.vercel.app/)
 
+## Lab 5 - Node.js
+
+[Go to repo to check it out](https://github.com/Rix11-H/DEV5-LAB5)
+
